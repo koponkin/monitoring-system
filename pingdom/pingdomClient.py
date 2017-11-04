@@ -5,7 +5,7 @@ from pingdom.metric import CheckResult, Metric
 
 
 class PingdomClient:
-    def __init__(self, username, password, apikey, api_version='2.0'):
+    def __init__(self, username, password, apikey, api_version='2.1'):
         """
         :param username: account main email
         :param password: account password
