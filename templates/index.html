@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/monitoring.css">
     <script src="/static/js/jquery-3.2.1.min.js"></script>
     <script src="/static/js/actions.js"></script>
+    <script src="/static/js/pingdom.js"></script>
+    <script src="/static/js/postgres.js"></script>
 </head>
 <body>
 <p><select onchange="onTimeChange(this.options[this.selectedIndex].value)">
@@ -12,12 +15,8 @@
     <option value=15>Last 15 min</option>
     <option value=60>last 1 hour</option>
 </select></p>
-<div>
-    <label>Pingdom service : </label>
-    <label id="pingdom_service_name"></label>
-
-    <div id="pingdom_table"></div>
-</div>
+<div id="pingdom_block" class="infoBlock"></div>
+<div id="postgres_block" class="infoBlock"></div>
 
 </body>
 </html>
