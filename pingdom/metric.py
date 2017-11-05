@@ -15,6 +15,12 @@ class Metric:
         return json.dumps({"service_name": self.service_name,
                     "results": [e.to_dic() for e in self.check_results]})
 
+    def to_dic(self):
+        return {
+                    "service_name": self.service_name,
+                    "results": [e.to_dic() for e in self.check_results]
+                }
+
 
 class CheckResult:
     date = None
