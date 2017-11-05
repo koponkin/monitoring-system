@@ -1,3 +1,0 @@
-C:\Users\kopon\PycharmProjects\monitoring-system>python
-from monitoring_system import db, app
-db.create_all(app=app)
